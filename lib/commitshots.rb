@@ -29,7 +29,7 @@ optparse = OptionParser.new do|opts|
 
 optparse.parse!
 
-phantomScript = File.join(File.dirname(__FILE__), 'lib/screenshot.js')
+phantomScript = File.join(File.dirname(__FILE__), 'phantomjs/screenshot.js')
 url = ARGV[0]
 width = options[:width]
 height = options[:height]
