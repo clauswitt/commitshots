@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.description = "a little utility to create a screenshot from each commit of a project"
   s.authors     = ["Claus Witt"]
   s.email       = 'wittnezz@gmail.com'
-  s.files       = ["lib/commitshots.rb", "lib/commitshots/commits.rb", "lib/commitshots/phantomjs/screenshot.js"]
+  s.files       = ["lib/commitshots.rb", "lib/commitshots/commits.rb"]
   s.homepage    =
     'http://rubygems.org/gems/commitshots'
 end
