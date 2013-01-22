@@ -2,6 +2,11 @@ A simple ruby script to iterate over the commits in a project, and save a screen
 
 You can set the width and height of the image via the --width and --height options. 
 
+Install the gem
+
+```
+gem install commitshots
+```
 
 **Usage: **
 
