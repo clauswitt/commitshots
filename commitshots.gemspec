@@ -1,6 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = 'commitshots'
-  s.version     = '0.0.1'
+  s.version     = '0.0.3'
+  s.executables << 'commitshots'
   s.date        = '2013-01-22'
   s.summary     = "commitshots"
   s.description = "a little utility to create a screenshot from each commit of a project"

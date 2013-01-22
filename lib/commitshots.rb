@@ -1,5 +1,5 @@
 require 'optparse'
-require 'commits'
+require 'commitshots/commits'
 
 options = {}
 
