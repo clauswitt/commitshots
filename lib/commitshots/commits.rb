@@ -1,11 +1,15 @@
 module Commitshots
   class Commits
+    def initialize(backend)
+      @backend = backend
+    end
+
     def each
-      `git rev-list --reverse --all --pretty=oneline`.split("\n").each do |line|
+      @backend.get_revisions.each do |line|
         parts = line.split(' ')
         id = parts[0]
         msg = line.gsub(id, '')
-        `git checkout #{id}`
+        @backend.checkout_revision(id)
         yield id, msg
       end
     end
