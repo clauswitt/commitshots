@@ -8,7 +8,7 @@ phantomScript = File.join(File.dirname(__FILE__), 'phantomjs/screenshot.js')
 url = ARGV[0]
 width = options[:width]
 height = options[:height]
-backend = Object::const_get("Commitshots::Backends::#{options[:backend].capitalize}").new
+backend = Module.by_name("Commitshots::Backends::#{options[:backend].capitalize}").new
 
 
 num = 0
