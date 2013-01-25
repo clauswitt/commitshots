@@ -1,0 +1,14 @@
+PATH
+  remote: .
+  specs:
+    commitshots (0.0.6)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  commitshots!

@@ -12,8 +12,7 @@ Gem::Specification.new do |s|
   s.authors     = ["Claus Witt"]
   s.email       = 'wittnezz@gmail.com'
   s.files       = `git ls-files`.split($/)
-  s.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
-  s.homepage    =
-    'http://rubygems.org/gems/commitshots'
+  s.executables = s.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
+  s.homepage    = 'http://rubygems.org/gems/commitshots'
   s.require_paths = ["lib"]
 end
