@@ -10,12 +10,12 @@ optparse = OptionParser.new do|opts|
 
 
    options[:width] = 800
-   opts.on( '--width WIDTH', 'Width of the browser window' ) do |width|
+   opts.on( '--width WIDTH', "Width of the browser window, defaults to #{options[:width]}" ) do |width|
      options[:width] = width
    end
 
    options[:height] = 600
-   opts.on( '--height HEIGHT', 'Height of the browser window' ) do |height|
+   opts.on( '--height HEIGHT', "Height of the browser window, defaults to #{options[:height]}" ) do |height|
      options[:height] = height
    end
 
